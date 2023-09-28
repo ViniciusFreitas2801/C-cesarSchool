@@ -2,12 +2,110 @@
 
 int main(void) {
 
+    //Matrizes para multiplicacao
+    int mA [3][2];
+    int mB [2][2];
+    int mResultado[3][2];
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            mResultado[i][j] = 0;
+            for (int k = 0; k < 2; k++)
+            {
+                mResultado[i][j] += mA[i][k] * mB[k][j];
+            }
+            
+        }
+        
+    }
     
 
     return 0;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    int mA[3][3];
+    int mB[3][3];
+    int mResultado[3][3];
+
+    //Pedindo ao usuario os valores da matriz
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            scanf("%d", &mA[i][j]);
+        }
+    }
+
+    //Pedindo ao usuario os valores da matriz
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            scanf("%d", &mB[i][j]);
+        }
+    }
+
+    //Soma
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            mResultado[i][j] = mA[i][j] + mB[i][j];
+        }
+        
+    }
+
+    //Printando
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%3d", mResultado[i][j]);
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}
+
+*/
 
 
 
